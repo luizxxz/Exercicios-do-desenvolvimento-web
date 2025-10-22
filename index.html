@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cores do css</title>
-    <style>
-        body{
-            background-color: antiquewhite;
-        }
-        h1{
-            background-color: darkseagreen;
-            color: whitesmoke;
-        }
-        h2{
-            background-color: #c58940;
-            color: #FAF8F1;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <title>O flex invertido de sla</title>
+ 
+  <style>
+    .container {
+  color: white;
+  border: 5px solid gold;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+
+.container > * {
+  flex-basis: 120px; 
+  flex-grow: 1;      
+  flex-shrink: 1;
+}
+
+    .red {background-color: #eb4d4b;}
+    .orange {background-color: #f0932b;}
+    .yellow {background-color: #f6e58d;}
+    .green {background-color: #6ab04c;}
+    .blue {background-color: #4834d4;}
+    .indigo {background-color: #30336b;}
+    .purple {background-color: #be2edd;}
+  </style>
 </head>
+
 <body>
-    <h1>Hello</h1>
-    <h2>World</h2>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+  
 </body>
 
 </html>
